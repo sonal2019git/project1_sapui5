@@ -1,0 +1,13 @@
+<mvc:View controllerName="project1.controller.FioriApp1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    <content> 
+    <List > 
+    <items>
+    <CustomListItem ></CustomListItem>
+    </items>
+    </List>
+       </content>
+    </Page>
+</mvc:View>
