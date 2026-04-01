@@ -7,7 +7,7 @@
     <items>
     <CustomListItem ></CustomListItem>
     </items>
-    </List>
+    </List>+
        </content>
     </Page>
 </mvc:View>
