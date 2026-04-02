@@ -10,8 +10,14 @@
       "windows": {
         "runtimeExecutable": "npx.cmd"
       },
-      "runtimeArgs": ["fiori", "run"],
-      "args": ["--open", "test/flp.html#app-preview"],
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--open",
+        "test/flp.html#app-preview"
+      ],
       "console": "internalConsole",
       "internalConsoleOptions": "openOnSessionStart",
       "outputCapture": "std",
@@ -30,7 +36,10 @@
       "windows": {
         "runtimeExecutable": "npx.cmd"
       },
-      "runtimeArgs": ["fiori", "run"],
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
       "args": [
         "--config",
         "./ui5-local.yaml",

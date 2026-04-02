@@ -1,8 +1,15 @@
-sap.ui.define(["sap/ui/core/mvc/Controller"], (Controller) => {
+sap.ui.define(["sap/ui/core/mvc/Controller",
+              
+                "project1/model/formatter"
+], (Controller, formatter) => {
   "use strict";
-
+console.log("Run fiori app1 controller");
   return Controller.extend("project1.controller.FioriApp1", {
-    onInit() {
+    formatter:formatter,
+    onInit(
+      
+    ) {
+      console.log("Run fiori app1 controller");
       var empObject = {
         Employees: [
           {

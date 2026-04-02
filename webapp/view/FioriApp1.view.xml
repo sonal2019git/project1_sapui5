@@ -1,13 +1,22 @@
 <mvc:View controllerName="project1.controller.FioriApp1"
     xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m">
+    xmlns="sap.m"
+     xmlns:core="sap.ui.core">
     <Page id="page" title="{i18n>title}">
     <content> 
-    <List > 
-    <items>
-    <CustomListItem ></CustomListItem>
-    </items>
-    </List>+
+           <List id="myList" items="{EmployeeModel>/Employees}" > 
+                 <items>
+                       <CustomListItem id="columList" class="sapUiTinyMargin" >
+                                 <content>
+                                       <HBox id="hBox" justifyContent="SpaceBetween">
+                                        <Text id="text1" text="{EmployeeModel>Name}" />
+                                        <Text id="text2" text="{parts:[{path:'EmployeeModel>Age'},{path:'EmployeeModel>Name'}],formatter:'.formatter.onReturnAgeMessage'}"/> 
+                                       </HBox>
+                                 </content>
+                       </CustomListItem>
+                        
+                 </items>
+           </List>
        </content>
     </Page>
 </mvc:View>
